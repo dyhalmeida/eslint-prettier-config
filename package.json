@@ -2,6 +2,10 @@
   "name": "eslint-prettier-config",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "fix": "prettier . --write && eslint --fix",
+    "prepare": "husky"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
@@ -10,6 +14,7 @@
     "eslint-config-standard-with-typescript": "latest",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
+    "husky": "^9.0.10",
     "prettier": "^3.2.4"
   },
   "peerDependencies": {
